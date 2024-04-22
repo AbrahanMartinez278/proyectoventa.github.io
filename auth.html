@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="interfaz.css">
+    <link rel="stylesheet" href="web-font-files/lineicons.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-danger" href="#"><strong>Noentiendo</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" aria-current="page" href="principal.html" id="item-menu-principal">Principal</a>
+          <a class="nav-link active" href="interfaz.html" id="item-menu-compra">Compra</a>
+          <a class="nav-link" href="catalogo.html" id="item-menu-catalogo">Catalogo</a>
+          <a class="nav-link" aria-disabled="true">Salir</a>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+       <div class="wrapper">
+            <aside id="sidebar">
+              <div class="d-flex">
+                <button id="toggle-btn" type="button">
+                  <i class="lni lni-grid-alt"></i>
+                </button>
+                <div class="sidebar-logo">
+                   <a href="principal.html" id="item-menu-principal">HOME</a>
+                </div>
+              </div>
+              <ul class="sidebar-nav">
+                
+                <li class="sidebar-item">
+                  <a href="profile.html" class="sidebar-link" id="item-menu-profile">
+                    <i class="lni lni-user"></i>
+                    <span>Profile</span>
+                  </a>
+                </li>
+        
+                <li class="sidebar-item">
+                  <a href="task.html" class="sidebar-link" id="item-menu-task">
+                    <i class="lni lni-agenda"></i>
+                    <span>Task</span>
+                  </a>
+                </li>
+        
+                <li class="sidebar-item">
+                  <a href="auth.html" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse"
+                   data-bs-target="#auth" aria-expanded="false" aria-controls="auth" id="item-menu-auth">
+                   <i class="lni lni-protections"></i>
+                   <span>Auth</span>
+                  </a>
+                  <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                      <a href="login.html" class="sidebar-link" id="item-menu-login">Login</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidebar-item">
+                  <a href="multilevel.html" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
+                <span>Multi Level</span>
+                  </a>
+                  <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                      <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
+                      data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
+                       Two links
+                      </a>
+                      <ul id="multi-two"  class="sidebar-dropdown list-unstyled collapse">
+                        <li class="sidebar-item">
+                          <a href="" class="sidebar-link">Link 1</a>
+                        </li>
+                        <li class="sidebar-item">
+                          <a href="" class="sidebar-link">Link 2</a>
+                        </li>
+                       
+                      </ul>
+                    </li>
+                  </ul>
+           
+                </li>
+                <li class="sidebar-item">
+                  <a href="notifications.html" class="sidebar-link" id="item-menu-notifications">
+                    <i class="lni lni-popup"></i>
+                    <span>Notifications</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="settings.html" class="sidebar-link" id="item-menu-settings">
+                    <i class="lni lni-cog"></i>
+                    <span>Settings</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="sidebar-footer">
+                <a href="#" class="sidebar-link">
+                  <span>Logout</span>
+                </a>
+              </div>
+            </aside>
+          </div>
+          <div class="container"><a href="#">Auth</a></div>
+
+          <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+          <script src="bootstrap/script.js"> </script>
+          <script src="bootstrap/menu.js"></script>
+  
+        </body>
+        </html>
